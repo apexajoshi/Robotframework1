@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220912 00:48:55.719" rpa="false" schemaversion="3">
+<suite id="s1" name="Test" source="D:\pycharmprojects\robotframework\test.robot">
+<test id="s1-t1" name="Playwright: Open a browser in GUI mode" line="26">
+<kw name="Open Browser" library="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.
+Use `New Page` directly instead of `Open Browser` for production and automated execution.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20220912 00:48:56.449" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg timestamp="20220912 00:48:56.450" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "D:\\pycharmprojects\\robotframework\\browser\\traces\\b3ef9281-a34a-40b1-a7ba-fcdf6c17a829"}</msg>
+<msg timestamp="20220912 00:48:56.854" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"D:\\pycharmprojects\\robotframework\\browser\\traces\\b3ef9281-a34a-40b1-a7ba-fcdf6c17a829"}</msg>
+<msg timestamp="20220912 00:48:56.855" level="INFO">{"acceptDownloads": true, "ignoreHTTPSErrors": false, "bypassCSP": true, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false, "reducedMotion": "no-preference", "forcedColors": "none"}</msg>
+<msg timestamp="20220912 00:48:56.882" level="INFO">Successfully created context. </msg>
+<msg timestamp="20220912 00:48:56.882" level="INFO">{'acceptDownloads': True, 'ignoreHTTPSErrors': False, 'bypassCSP': True, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False, 'reducedMotion': 'no-preference', 'forcedColors': 'none'}</msg>
+<msg timestamp="20220912 00:48:57.076" level="INFO">Successfully initialized new page object and opened url: about:blank</msg>
+<status status="PASS" starttime="20220912 00:48:56.449" endtime="20220912 00:48:57.077"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>https://www.google.com/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220912 00:48:58.904" level="INFO">Successfully initialized new page object and opened url: https://www.google.com/</msg>
+<status status="PASS" starttime="20220912 00:48:57.077" endtime="20220912 00:48:58.904"/>
+</kw>
+<kw name="Get Title" library="Browser">
+<arg>==</arg>
+<arg>Google</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" starttime="20220912 00:48:58.905" endtime="20220912 00:48:58.975"/>
+</kw>
+<kw name="Get Title" library="Browser">
+<arg>validate</arg>
+<arg>value == "Google"</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" starttime="20220912 00:48:58.975" endtime="20220912 00:48:58.983"/>
+</kw>
+<kw name="Get Url" library="Browser">
+<arg>==</arg>
+<arg>https://www.google.com/</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" starttime="20220912 00:48:58.984" endtime="20220912 00:48:58.986"/>
+</kw>
+<status status="PASS" starttime="20220912 00:48:56.446" endtime="20220912 00:48:58.987"/>
+</test>
+<status status="PASS" starttime="20220912 00:48:55.721" endtime="20220912 00:48:59.066"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220912 00:48:56.449" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+</errors>
+</robot>
